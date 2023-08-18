@@ -2,7 +2,7 @@ import re
 
 email = re.compile(r"^\S+@\S+\.\S+$")
 string = str(input("Enter a valid email address: "))
-password = re.compile(r"^[A-Z][a-z]+\d\d\W$")
+password = re.compile(r"[A-Z][A-Za-z+0-9+\D]{8,}")
 str2 = input("Enter your password: ")
 
 def validation(email,string):
